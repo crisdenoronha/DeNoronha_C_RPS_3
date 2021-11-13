@@ -2,15 +2,14 @@ from random import randint
 from gameComponents import winLose, gameVars, gameRules
 choices = ["rock", "paper", "scissors"]
 
-print("\n\033[0;37;44m////////Welcome to Rock, Paper, Scissors Game////////\n")
+print("\n\033[1;36m////////Welcome to Rock, Paper, Scissors Game////////\n")
 print("\033[0;0mRock beats Scissors")
 print("Scissors beats Paper")
 print("Paper beats Rock")
-print("\n\033[0;37;44m/////////////////////////////////////////////////////\n")
+print("\n\033[1;36m/////////////////////////////////////////////////////\n")
 
 while gameVars.player is False:
 
-    print("\n\033[0;0m--------------------------------------------------\n")
     print("\033[1;36mPlayer Lives" + str(gameVars.playerLives))
     print("\033[1;35mComputer Lives" + str(gameVars.computerLives))
     print("\n\033[0;0m--------------------------------------------------\n")
